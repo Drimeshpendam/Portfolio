@@ -1,0 +1,139 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; /* Gap between flex items */
+  }
+  
+  .hero-profile {
+    text-align: center;
+    position: relative; /* Relative positioning for social icons */
+  }
+  
+  .profile-img {
+    margin-top: 30px; /* Top margin for spacing */
+    width: 300px; /* Fixed width for desktop */
+    height: 300px; /* Ensure height matches width for perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensure gradient doesn't overflow */
+  }
+  
+  .social-icons {
+    position: absolute; /* Position social icons relative to hero-profile */
+    bottom: -20px; /* Adjust vertical position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    gap: 15px; /* Gap between social icons */
+    background: rgb(0, 0, 0); /* Background color for social icons container */
+    padding: 10px 15px; /* Padding inside social icons container */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .social-icons a {
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+    text-decoration: none; /* Remove underline from icons */
+  }
+  
+  .social-icons a:hover {
+    color: #DF8908; /* Hover color */
+  }
+  
+  .hero h1 {
+    text-align: center;
+    width: 65%; /* Width of the heading */
+    font-size: 65px; /* Font size */
+    font-weight: 600; /* Bold */
+    line-height: 70px; /* Line height */
+  }
+  
+  .hero h1 span {
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text; /* Clip text to background */
+    -webkit-background-clip: text; /* For older webkit browsers */
+    -webkit-text-fill-color: transparent; /* Hide original text */
+  }
+  
+  .hero p {
+    width: 65%; /* Width of the paragraph */
+    text-align: center; /* Center align text */
+    font-size: 18px; /* Font size */
+    line-height: 30px; /* Line height */
+  }
+  
+  .hero-action {
+    display: flex; /* Flex container */
+    align-items: center; /* Center align items vertically */
+    gap: 25px; /* Gap between action buttons */
+    font-weight: 500; /* Font weight */
+    margin-bottom: 50px; /* Bottom margin for spacing */
+  }
+  
+  .hero-connect,
+  .hero-resume {
+    padding: 20px 30px; /* Padding inside buttons */
+    border-radius: 50px; /* Rounded corners */
+    background: black; /* Background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 24px; /* Font size */
+  }
+  
+  .hero-connect:hover,
+  .hero-resume:hover {
+    border: 2px solid white; /* Border color on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .profile-img {
+      margin-top: 50px; /* Adjusted top margin */
+      width: 200px; /* Reduced width for smaller screens */
+      height: 200px; /* Reduced height */
+    }
+  
+    .social-icons {
+      bottom: -15px; /* Adjusted vertical position */
+      padding: 8px 12px; /* Adjusted padding */
+    }
+  
+    .hero h1 {
+      margin-top: 10px; /* Adjusted top margin */
+      width: 90%; /* Full width for smaller screens */
+      font-size: 40px; /* Reduced font size */
+      line-height: 50px; /* Adjusted line height */
+    }
+  
+    .hero p {
+      width: 90%; /* Adjusted width */
+      font-size: 16px; /* Reduced font size */
+      line-height: 25px; /* Adjusted line height */
+      margin: 5px 0px; /* Adjusted margin */
+    }
+  
+    .hero-action {
+      gap: 15px; /* Reduced gap between buttons */
+      margin-bottom: 30px; /* Reduced bottom margin */
+    }
+  
+    .hero-connect,
+    .hero-resume {
+      padding: 15px 25px; /* Adjusted padding */
+      font-size: 18px; /* Reduced font size */
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content:space-evenly;
+  }
+  
+  .social-icons a {
+    color: #ffffff; /* Icon color */
+    font-size: 36px; /* Adjust size as needed */
+    
+  }
+  
+  .social-icons a:hover {
+    color: #84ff00; /* Hover color */
+  }

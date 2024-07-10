@@ -1,0 +1,181 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 70px 10%;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.title-box h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.about-sections {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+}
+
+.about-left {
+  width: 300px; /* Fixed width for desktop */
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-left {
+  width: 300px; /* Fixed width for desktop */
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ensure positioning context for overlay */
+}
+
+.about-left img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative; /* Ensure positioning context for overlay */
+}
+
+.about-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 95vh;
+  background-color: rgba(107, 83, 83, 0.123); /* Adjust transparency here */
+  border-radius: 10px;
+}
+
+
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-para {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.about-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;  
+}
+
+.about-skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.about-skill p {
+  font-size: 18px;
+  font-weight: 500;
+  border: 3px solid white;
+  border-radius: 15px 15px;
+  padding: 12px;
+}
+
+.about-skill hr {
+  outline: none;
+  border: none;
+  width: 8px; /* Adjust thickness as needed */
+  height: 100%; /* Ensures the line stretches vertically */
+  border-radius: 50px;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+}
+
+
+.about-achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.about-achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: 0.5s;
+}
+
+.about-achievement h1 {
+  font-size: 80px;
+  font-weight: 900;
+  background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-achievement p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.about-skill:hover {
+  transform: scale(1.05);
+}
+
+.about-achievement:hover {
+  transform: scale(1.12);
+}
+
+@media (max-width: 768px) {
+  .about {
+    gap: 50px;
+    margin: 50px 6%;
+    align-items: start;
+  }
+
+  .about-sections {
+    flex-direction: column;
+  }
+
+  .about-left {
+    display: none;
+  }
+
+  .about-para {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .about-skill p {
+    font-size: 14px;
+  }
+
+  .about-achievement h1 {
+    font-size: 28px;
+  }
+
+  .about-achievement p {
+    font-size: 14px;
+  }
+}
