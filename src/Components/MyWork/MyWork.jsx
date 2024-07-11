@@ -5,6 +5,7 @@ import mywork_data from '../../assets/mywork_data';
 import arrow_icon from '../../assets/arrow_icon.svg';
 import github_icon from '../../assets/github.svg'; // Assuming you have a GitHub icon
 
+
 const MyWork = () => {
   return (
     <div id='work' className='mywork'>
@@ -35,11 +36,14 @@ const MyWork = () => {
                   }}
                 >
                   <span style={{ marginRight: '10px' }}>{work.w_name}</span>
-                  <img
-                    src={github_icon} // Use your GitHub icon path here
-                    alt="GitHub Icon"
-                    style={{ width: '30px', height: '30px', backgroundColor: 'white', borderRadius: '50%', padding: '2.5px' }}
-                  />
+                  <a href={work.link} target="_blank" rel="noopener noreferrer">
+  <img
+    src={github_icon} // Replace with your GitHub icon path
+    alt="GitHub Icon"
+    style={{ width: '30px', height: '30px', backgroundColor: 'white', borderRadius: '50%', padding: '2.5px', cursor: 'pointer' }}
+  />
+</a>
+
                 </a>
               </div>
             </div>

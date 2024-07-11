@@ -9,18 +9,21 @@ const mywork_data = [
     {
         w_no: 1,
         w_name: "Chat Application",
-        w_img: project1_img
+        w_img: project1_img,
+        link:"https://github.com/Drimeshpendam/Video-Conferencing-App-With-Gen-AI-ChatBot"
        
     },
     {
         w_no: 2,
         w_name: "Github Clone",
-        w_img: project2_img
+        w_img: project2_img,
+        link:"https://github.com/Drimeshpendam/Github_Clone"
     },
     {
         w_no: 3,
         w_name: "Career Blogs",
-        w_img: project3_img
+        w_img: project3_img,
+        link:"https://github.com/Drimeshpendam/Portfolio"
     }, 
     {
         w_no: 1,
