@@ -18,7 +18,7 @@ const App = () => {
       <Timeline/>
       <About/>
       <Services/>
-      <MyWork/>
+      
       <Contact/>
       <Footer/>
 
